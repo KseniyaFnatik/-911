@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техно 911 - Интернет-магазин электроники в Сергиевом Посаде</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-tools"></i> Техно 911</h1>
+                    <p>Сергиев Посад</p>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <div class="search">
+                        <input type="text" placeholder="Поиск товаров...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+                <button class="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Ваш надежный партнер в мире технологий</h2>
+                    <p>Широкий ассортимент электроники, бытовой техники и IT-услуг в Сергиевом Посаде</p>
+                    <div class="hero-buttons">
+                        <a href="#catalog" class="btn btn-primary">Перейти в каталог</a>
+                        <a href="#services" class="btn btn-secondary">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="tech-grid">
+                        <div class="tech-item"><i class="fas fa-laptop"></i></div>
+                        <div class="tech-item"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="tech-item"><i class="fas fa-tv"></i></div>
+                        <div class="tech-item"><i class="fas fa-headphones"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставляем по Сергиеву Посаду и области в день заказа</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Гарантия качества</h3>
+                    <p>Официальная гарантия на все товары от производителя</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Ремонт и обслуживание</h3>
+                    <p>Профессиональный ремонт техники любой сложности</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>24/7 поддержка</h3>
+                    <p>Консультации и техническая поддержка круглосуточно</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Section -->
+    <section id="catalog" class="catalog">
+        <div class="container">
+            <h2 class="section-title">Популярные товары</h2>
+            <div class="catalog-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=600&q=80" alt="Ноутбук">
+                        <div class="product-badge">Хит продаж</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Ноутбук ASUS VivoBook</h3>
+                        <p>15.6", Intel Core i5, 8GB RAM, 512GB SSD</p>
+                        <div class="product-price">
+                            <span class="price">45,990 ₽</span>
+                            <span class="old-price">52,990 ₽</span>
+                        </div>
+                        <button class="btn btn-primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=600&q=80" alt="Смартфон">
+                        <div class="product-badge">Новинка</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Смартфон Samsung Galaxy</h3>
+                        <p>6.1", 128GB, 48MP камера, 5G</p>
+                        <div class="product-price">
+                            <span class="price">32,990 ₽</span>
+                        </div>
+                        <button class="btn btn-primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Телевизор">
+                    </div>
+                    <div class="product-info">
+                        <h3>Телевизор LG 55" 4K</h3>
+                        <p>Smart TV, HDR, WebOS, 4 HDMI</p>
+                        <div class="product-price">
+                            <span class="price">68,990 ₽</span>
+                            <span class="old-price">79,990 ₽</span>
+                        </div>
+                        <button class="btn btn-primary">В корзину</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1510070009289-b5bc34383727?auto=format&fit=crop&w=600&q=80" alt="Наушники">
+                    </div>
+                    <div class="product-info">
+                        <h3>Наушники Sony WH-1000XM4</h3>
+                        <p>Беспроводные, шумоподавление, 30ч работы</p>
+                        <div class="product-price">
+                            <span class="price">24,990 ₽</span>
+                        </div>
+                        <button class="btn btn-primary">В корзину</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-more">
+                <a href="catalog.html" class="btn btn-secondary">Смотреть все товары</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-medical"></i>
+                    <h3>Ремонт компьютеров</h3>
+                    <p>Диагностика, ремонт, замена комплектующих, установка ПО</p>
+                    <a href="#" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Ремонт телефонов</h3>
+                    <p>Замена экрана, аккумулятора, ремонт после воды</p>
+                    <a href="#" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-network-wired"></i>
+                    <h3>IT-услуги</h3>
+                    <p>Настройка сети, установка камер, систем безопасности</p>
+                    <a href="#" class="service-link">Подробнее</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Обслуживание техники</h3>
+                    <p>Чистка, профилактика, обновление драйверов</p>
+                    <a href="#" class="service-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О компании Техно 911</h2>
+                    <p>Мы - ведущий магазин электроники в Сергиевом Посаде с более чем 10-летним опытом работы. Наша миссия - предоставлять качественную технику и профессиональные услуги по доступным ценам.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Лет опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Довольных клиентов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Товаров в каталоге</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/image 21.png" alt="Магазин Техно 911">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>Московская область, г. Сергиев Посад, проспект Красной Армии, дом 251А</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (977) 100-19-11</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>sales@sptechnology.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-building"></i>
+                        <div>
+                            <h3>Реквизиты</h3>
+                            <p>ООО «Техно 911»<br>ИНН 5042153520/504201001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Режим работы</h3>
+                            <p>Пн-Пт: 9.00-18.00<br><br>Сб-Вс: выходной</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Телефон" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Slider Section -->
+    <section class="team-slider-section">
+        <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            <div class="team-slider-flex" style="display:flex;align-items:center;justify-content:center;gap:1rem;">
+                <button class="team-slider-arrow team-slider-prev" aria-label="Назад">&#8592;</button>
+                <div class="team-slider" style="flex:1;min-width:0;">
+                    <div class="team-slider-track">
+                        <div class="team-slide">
+                            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2" alt="Иван Петров">
+                            <h4>Иван Петров</h4>
+                            <p>Директор</p>
+                        </div>
+                        <div class="team-slide">
+                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2" alt="Мария Иванова">
+                            <h4>Мария Иванова</h4>
+                            <p>Менеджер по продажам</p>
+                        </div>
+                        <div class="team-slide">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256&facepad=2" alt="Алексей Смирнов">
+                            <h4>Алексей Смирнов</h4>
+                            <p>Инженер</p>
+                        </div>
+                        <div class="team-slide">
+                            <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=256&h=256&facepad=2" alt="Екатерина Сидорова">
+                            <h4>Екатерина Сидорова</h4>
+                            <p>Сервисный специалист</p>
+                        </div>
+                        <div class="team-slide">
+                            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=256&h=256&facepad=2" alt="Дмитрий Кузнецов">
+                            <h4>Дмитрий Кузнецов</h4>
+                            <p>IT-консультант</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="team-slider-arrow team-slider-next" aria-label="Вперёд">&#8594;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-mobile-bar">
+            <div class="search">
+                <input type="text" placeholder="Поиск товаров...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <button class="burger" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-tools"></i> Техно 911</h3>
+                    <p>Ваш надежный партнер в мире технологий в Сергиевом Посаде</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Компьютеры</a></li>
+                        <li><a href="#">Смартфоны</a></li>
+                        <li><a href="#">Телевизоры</a></li>
+                        <li><a href="#">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="#">Ремонт техники</a></li>
+                        <li><a href="#">IT-консультации</a></li>
+                        <li><a href="#">Установка ПО</a></li>
+                        <li><a href="#">Настройка сети</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="about.html">О компании</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Техно 911. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
