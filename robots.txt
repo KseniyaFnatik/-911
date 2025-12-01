@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin.html
+Disallow: /login.html
+Disallow: /profile.html
+Disallow: /resume-create.html
+Allow: /
